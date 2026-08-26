@@ -1,0 +1,44 @@
+generated: '2026-08-26'
+method: probed
+source: live probes of the /.well-known/ surface on every Plantible Foods host
+note: >-
+  Every probed path returned a hard 404. Plantible Foods publishes no /.well-known/
+  discovery surface, so NO WellKnown or SecurityTxt pointer is emitted in apis.yml —
+  this file records a verified absence, not a presence. The host is not a soft-404
+  catch-all: a control request for a random /.well-known/ path also returned 404 with
+  the same 88-byte Webflow error body, so these are genuine negatives.
+hit_count: 0
+soft_404_control:
+  path: /.well-known/aeiou-does-not-exist-<random>
+  status: 404
+  bytes: 88
+  verdict: host returns real 404s; not a catch-all
+hosts:
+- host: https://www.plantiblefoods.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://plantiblefoods.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

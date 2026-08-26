@@ -1,17 +1,37 @@
 aid: plantible-foods
 name: Plantible Foods
-description: 'Plantible Foods is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Plantible Foods is a business-to-business food-ingredient company founded
+  in 2018 by Dutch entrepreneurs Tony and Maurits, with its first commercial production
+  facility in Schleicher County, Texas. The company cultivates lemna (duckweed) in
+  controlled, automated aquafarms and uses a proprietary water-based extraction process
+  to isolate RuBisCO, sold as Rubi Protein — roughly 85% protein by weight with a PDCAAS
+  of 1.0 — alongside Lemna Leaf Greens and application-specific systems such as RubiWhisk
+  and RubiPrime. It sells to food manufacturers and ingredient companies rather than
+  consumers, and in February 2026 became the first company to receive an FDA "no questions"
+  GRAS letter for isolated RuBisCO protein in food. Investors include RA Capital, Nourish
+  Ventures, Chipotle, Kellogg''s and CJ Group. Plantible is an agricultural manufacturing
+  business: it publishes no public API, developer portal, SDK, or machine-readable contract
+  of any kind, and plantiblefoods.com is a Webflow marketing site with no developer surface.'
+image: https://cdn.prod.website-files.com/62bc3dbdb2ef9473c0480324/62c5ea25382a7e543203d152_meta-image.jpg
 url: https://raw.githubusercontent.com/api-evangelist/plantible-foods/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+x-tier: profile
+x-tier-reason: no-api-surface
+specificationVersion: '0.23'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Food
+- Food Ingredients
+- Alternative Protein
+- Plant-Based
+- Agriculture
+- Biotechnology
+- Manufacturing
+- Sustainability
+- Texas
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +40,58 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.plantiblefoods.com/
+- type: About
+  url: https://www.plantiblefoods.com/our-story
+- type: Team
+  url: https://www.plantiblefoods.com/our-team
+- type: Products
+  url: https://www.plantiblefoods.com/applications
+- type: Careers
+  url: https://www.plantiblefoods.com/careers
+- type: Contact
+  url: https://www.plantiblefoods.com/contact
+- type: Blog
+  url: https://www.plantiblefoods.com/newsroom
+- type: TermsOfService
+  url: https://www.plantiblefoods.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.plantiblefoods.com/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/plantible/
+- type: Twitter
+  url: https://twitter.com/plantible
+- type: Instagram
+  url: https://www.instagram.com/plantiblefoods/
+- type: DomainSecurity
+  url: security/plantible-foods-domain-security.yml
+- type: LLMsTxt
+  url: llms/plantible-foods-llms.txt
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Plantible Foods manufactures physical food ingredients — RuBisCO protein extracted from
+    duckweed at a Texas aquafarm — and sells them to food manufacturers, so there is no
+    software product to expose; plantiblefoods.com is a 23-page Webflow marketing site whose
+    sitemap contains no developer, API, or documentation page, and no api./developer./docs.
+    subdomain resolves in DNS at all.
+  evidence:
+  - url: https://www.plantiblefoods.com/openapi.json
+    status: 404
+  - url: https://www.plantiblefoods.com/graphql
+    status: 404
+  - url: https://www.plantiblefoods.com/llms.txt
+    status: 404
+  - url: https://www.plantiblefoods.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.plantiblefoods.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.plantiblefoods.com/sitemap.xml
+    status: 200
+  checked: '2026-08-26'

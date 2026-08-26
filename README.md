@@ -64,5 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Plantible Foods is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Plantible Foods is a business-to-business food-ingredient company founded in 2018 by Dutch
+entrepreneurs Tony and Maurits, with its first commercial production facility in Schleicher
+County, Texas. The company cultivates lemna (duckweed) in controlled, automated aquafarms and
+uses a proprietary water-based extraction process to isolate RuBisCO, sold as Rubi Protein —
+roughly 85% protein by weight with a PDCAAS of 1.0 — alongside Lemna Leaf Greens and
+application-specific systems such as RubiWhisk and RubiPrime. It sells to food manufacturers and
+ingredient companies rather than consumers, and in February 2026 became the first company to
+receive an FDA "no questions" GRAS letter for isolated RuBisCO protein in food.
+
+Plantible is an agricultural manufacturing business. It publishes no public API, developer
+portal, SDK, or machine-readable contract of any kind — see `x-coverage` in `apis.yml` for the
+probes behind that finding.
+
+- https://www.plantiblefoods.com/
