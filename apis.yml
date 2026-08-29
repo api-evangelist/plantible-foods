@@ -12,6 +12,17 @@ description: 'Plantible Foods is a business-to-business food-ingredient company 
   Ventures, Chipotle, Kellogg''s and CJ Group. Plantible is an agricultural manufacturing
   business: it publishes no public API, developer portal, SDK, or machine-readable contract
   of any kind, and plantiblefoods.com is a Webflow marketing site with no developer surface.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/62bc3dbdb2ef9473c0480324/62c5ea25382a7e543203d152_meta-image.jpg
 url: https://raw.githubusercontent.com/api-evangelist/plantible-foods/refs/heads/main/apis.yml
 x-type: company
